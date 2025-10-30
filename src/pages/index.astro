@@ -1,0 +1,49 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="nahuynh.dev">
+
+  
+  <!-- Navbar -->
+  <div
+    class="align-left fixed left-0 right-0 top-0 px-5 flex select-none items-center z-40 justify-center py-5 font-bold text-accent sm:px-16 sm:py-12 sm:text-3xl md:text-4xl xl:px-80"
+  >
+    <span>
+      <a
+        href="/"
+        class="bg-gradient-to-r from-info to-accent bg-clip-text leading-normal text-transparent"
+      >
+        nahuynh.dev
+      </a>
+    </span>
+    <nav class="ml-auto flex items-center space-x-8">
+      <a href="/projects">projects</a>
+      <a href="/Na_Huynh_Resume.pdf" target = "_blank">resume</a>
+      <a href="https://github.com/NaHuynh22" target = "_blank">
+        <img
+          src="/github-mark-white.svg"
+          class="h-6 w-6 sm:h-8 sm:w-8"
+          alt="Github"
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/na-huynh/" target = "_blank">
+        <img
+          src="/linkedin.svg"
+          class="h-6 w-6 sm:h-8 sm:w-8"
+          alt="Github"
+        />
+      </a>
+    </nav>
+  </div>
+
+  <!-- Hi Section -->
+  <div
+    class="flex flex-col items-center justify-center h-screen text-center gap-5"
+  >
+    <h1 class="text-4xl font-bold animate-fadeIn">I'm Na Huynh, a Computer Science Graduate Student</h1>
+    <h1 class="text-4xl font-bold animate-fadeIn">at George Mason University</h1>
+    <h1 class="text-1xl animate-fadeIn" style="color: gray;">Contact me at hhuynh22@gmu.edu</h1>
+  </div>
+
+</Layout>
