@@ -75,6 +75,43 @@ button:focus-visible {
   margin-top: 5vh;
 }
 
+.searchBar {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+/* Container for all category filter buttons*/
+.categoryButtons {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Styling for individual category filter buttons */
+.categoryBtn {
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hovering to indicate selection of filter button*/
+.categoryBtn:hover {
+  border-color: #646cff;
+}
+
+/* Styling for the applied category button */
+.activeCategory {
+  background-color: #646cff;
+  color: white;
+}
+
 .column {
   display: flex;
   flex-direction: row;
