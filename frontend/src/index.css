@@ -54,6 +54,51 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.itemContainer {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.itemCard {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.totalCalculateButton {
+  background-color: green;
+  color: white;
+  margin-top: 5vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+
+.delete {
+  background-color: rgb(135, 22, 22);
+  color: white;
+}
+
+.add {
+  background-color: rgb(9, 88, 9);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .column {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
